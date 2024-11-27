@@ -1,10 +1,13 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
+import GameStateContext from "../store/gameState-context";
 
 const FirstPage = () => {
+    const gameStateCtx = React.useContext(GameStateContext);
     const handleClick = () => {
-        console.log("Button was clicked!");
-    }
+        gameStateCtx.onGameState("playing");
+        console.log(gameStateCtx.gameState);
+    };
   return (
     <div>
       <h1>Welcome to the Carbon Game</h1>
@@ -16,6 +19,7 @@ const FirstPage = () => {
         <Button variant="primary" size="lg" onClick={() => handleClick()}>
           Start Game
         </Button>
+        {gameStateCtx.gameState === "playing" && <h1>Game on!</h1>}
       </div>
     </div>
   );
