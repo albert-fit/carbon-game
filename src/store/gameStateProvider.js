@@ -3,7 +3,7 @@ import { useState } from "react";
 import GameStateContext from "./gameState-context";
 
 const GameStateProvider = (props) => {
-    const [gameState, setGameState] = useState("menu");
+    const [gameState, setGameState] = useState("FirstPage");
     const [gameScore, setGameScore] = useState(0);
     
     const gameStateHandler = (gameState) => {
