@@ -10,8 +10,8 @@ const GameStateProvider = (props) => {
     const [questionThreeScore, setQuestionThreeScore] = useState(0);
     const [questionFourScore, setQuestionFourScore] = useState(0);
     
-    const gameStateHandler = () => {
-        const newGameState = gameState + 1;
+    const gameStateHandler = (input) => {
+        const newGameState = gameState + input;
         setGameState(newGameState);
         console.log(newGameState);
     }
@@ -37,6 +37,7 @@ const GameStateProvider = (props) => {
             default:
                 break
     }
+}
 
     return (
         <GameStateContext.Provider
@@ -57,5 +58,5 @@ const GameStateProvider = (props) => {
         </GameStateContext.Provider>
     );
     }
-}
+
 export default GameStateProvider;

@@ -15,8 +15,8 @@ const GameStateContext = React.createContext({
     setQuestionThreeScore: () => {},
     setQuestionFourScore: () => {},
     setGameScore: () => {},
-    onGameState: () => {},
-    onQuestionScore: () => {},
+    onGameState: (input) => {},
+    onQuestionScore: (question, points) => {},
 });
 
 export default GameStateContext;

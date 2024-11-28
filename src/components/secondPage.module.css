@@ -14,3 +14,36 @@
     border-radius: 20px;
     margin-top: 20px;
 }
+
+.sitePhoto{
+    width: 50%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.projectDescription{
+    height: 20vh;
+}
+
+.questionSpace{
+    height: 60vh;
+}
+
+.header1{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.header2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.paragraph{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: justify;
+}
