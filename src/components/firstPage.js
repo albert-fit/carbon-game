@@ -5,7 +5,7 @@ import GameStateContext from "../store/gameState-context";
 const FirstPage = () => {
     const gameStateCtx = React.useContext(GameStateContext);
     const handleClick = () => {
-        gameStateCtx.onGameState("SecondPage");
+        gameStateCtx.onGameState();
     };
   return (
     <div>

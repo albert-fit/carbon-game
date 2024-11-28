@@ -2,7 +2,6 @@ import React from "react";
 import { useState } from "react";
 import GameStateContext from "../store/gameState-context";
 import { Row, Col, Button } from "react-bootstrap";
-import ProgressBar from 'react-bootstrap/ProgressBar';
 import Container from 'react-bootstrap/Container';
 
 import classes from "./secondPage.module.css";
@@ -13,7 +12,6 @@ const SecondPage = () => {
     return(
         <div className={classes.secondPageDiv}>
         <Container fluid>
-        <ProgressBar now={25} label={"25%"} className={classes.progressBar} />
         <Row>
             <Col>Some Text</Col>
         </Row>
